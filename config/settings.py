@@ -101,6 +101,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Custom models
+AUTH_USER_MODEL = 'accounts.Advocate'
+
+# Redirect to Dashboard after successful login
+LOGIN_REDIRECT_URL = 'dashboard'  
+
+# Redirect to Home Feed after logout
+LOGOUT_REDIRECT_URL = 'home'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
